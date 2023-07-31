@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,700;0,800;1,500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    background-color: hsl(0, 0%, 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+.content-wrapper{
+    display: flex;
+    border-radius: 30px;
+    box-shadow: 25px 25px 30px 5px rgba(235,241,255,1);
+}
+
+.first-card {
+    color: #fff;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 21px;
+    gap: 16px;
+    background-image: linear-gradient(to bottom, #7857ff, #694cf9, #5941f4, #4736ee, #2e2be9);
+}
+
+.first-card .obtained-score {
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    background-image: linear-gradient(to top, #4e21ca, #4621ca, #3d21ca, #3221ca, #2421ca);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+
+.first-card p {
+    text-align: center;
+    font-size: 18px;
+}
+
+.first-card p, h5, .obtained-score h6 {
+    color: #d5c5ff;
+}
+
+.second-card {
+    padding: 20px;
+}
+
+.second-card h5{
+    color: hsl(224, 30%, 27%);
+}
+
+.score-box {
+    /* background-color: green; */
+    padding: 8px;
+    border-radius: 8px;
+    align-items: center;
+}
+
+.score-box .sub-name{
+    margin-left: 7px;
+}
+
+.score-summary-wrapper {
+    gap: 14px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.score-summary-wrapper .reaction{
+    background-color: #fff6f5;
+}
+
+.score-summary-wrapper .reaction .sub-name {
+    color: hsl(0, 100%, 67%);
+}
+
+.score-summary-wrapper .memory{
+    background-color: rgba(255,250,243,255);
+}
+
+.score-summary-wrapper .memory .sub-name{
+    color: hsl(39, 100%, 56%);
+}
+
+.score-summary-wrapper .verbal{
+    background-color: rgba(242,251,250,255);
+}
+
+.score-summary-wrapper .verbal .sub-name {
+    color: hsl(166, 100%, 37%);
+}
+
+.score-summary-wrapper .visual{
+    background-color: rgba(243,243,253,255);
+}
+
+.score-summary-wrapper .visual .sub-name{
+    color: hsl(234, 85%, 45%);
+}
+
+.score-box .sub-score .total-mark {
+    color: #9396a5;
+}
+
+
+.first-card div h2 {
+    font-size: 45px;
+    font-weight: 600;
+}
+
+
+.first-card, .second-card {
+    flex: 1;
+}
+
+.greeting-message p {
+    text-align: center;
+}
+
+.cont-btn {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 30px;
+    background-color: hsl(224, 30%, 27%);
+    color: #fff;
+    outline: none;
+    border: none;
+}
+
+.cont-btn:hover{
+    background-image: linear-gradient(to bottom, #4e21ca, #4621ca, #3d21ca, #3221ca, #2421ca);
+}
+
+.img-text {
+    align-items: center;
+}
+
+.img-text .sub-name h6, .sub-score h6{
+    margin: 0;
+}
+
+
+
+@media only screen and (max-width: 576px){
+    .content-wrapper{
+        flex-direction: column;
+        min-height: 100vh;
+        border-radius: 0px;
+    }
+    .first-card {
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+    }
+    .second-card{
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+}
+
+@media only screen and (min-width: 1200px){
+    .first-card{
+        padding: 30px;
+        gap: 15px;
+    }
+    .second-card{
+        padding: 26px;
+    }
+}
+
+@media only screen and (min-width: 1400px){
+    .first-card{
+        padding: 30px;
+        gap: 16px;
+    }
+    .second-card{
+        padding: 26px;
+    }
+}
